@@ -8,11 +8,14 @@
   --color-pink: #f49bab;
   --color-secondary: #9b7ebd;
   --color-black-main: #000;
-  --font-primary: "sans-serif";
+  --font-primary: "Open Sans", sans-serif;
 }
 
-body {
+html {
   font-size: 62.5%;
+}
+body {
+  font-family: var(--font-primary);
 }
 
 .form {
@@ -25,17 +28,19 @@ body {
   padding-block: 3rem;
 }
 .form h1 {
-  font-size: 3rem;
+  font-size: 5rem;
+  padding-block: 2rem;
 }
 .form > div {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 2rem 1rem;
 }
 .form-catfacts h2,
 .form-catpics h2 {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 .form-catfacts div,
 .form-catpics div {
@@ -45,16 +50,50 @@ body {
 }
 .catnumInput {
   font: inherit;
-  padding: 1rem 2rem;
-  width: 70%;
+  padding: 1rem 1rem;
+  width: 30rem;
+  font-size: 2rem;
   border-radius: 0.5rem;
   border-color: transparent;
   border: none;
+  text-align: center;
+}
+.catnumInput::placeholder {
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--color-secondary);
 }
 .btnsubimt {
+  background: var(--color-secondary);
   font: inherit;
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  padding: 1rem 1rem;
   border-radius: 0.5rem;
   border: none;
+}
+.result {
+  padding-top: 5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.result-list {
+  width: 80%;
+}
+.result-image-list {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.result-image-list-containter {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  object-position: center;
+  object-fit: cover;
+  width: 30rem;
+  height: 50rem;
 }
