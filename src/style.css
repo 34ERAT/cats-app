@@ -8,6 +8,7 @@
   --color-pink: #f49bab;
   --color-secondary: #9b7ebd;
   --color-black-main: #000;
+  --color-white: #fff;
   --font-primary: "Open Sans", sans-serif;
 }
 
@@ -71,6 +72,7 @@ body {
   padding: 1rem 1rem;
   border-radius: 0.5rem;
   border: none;
+  color: var(--color-white);
 }
 .result {
   padding-top: 5rem;
@@ -88,6 +90,10 @@ body {
   justify-content: center;
   gap: 1rem;
 }
+
+.result-image-list-containter img {
+  height: 100%;
+}
 .result-image-list-containter {
   overflow: hidden;
   display: flex;
@@ -96,4 +102,21 @@ body {
   object-fit: cover;
   width: 30rem;
   height: 50rem;
+}
+
+.spinner {
+  border: solid var(--color-secondary) 1rem;
+  padding: 6rem;
+  border-right-color: var(--color-pink);
+  border-left-color: var(--color-pink);
+  border-radius: 50%;
+  animation: spinner_ 1s ease-in-out infinite;
+}
+@keyframes spinner_ {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
