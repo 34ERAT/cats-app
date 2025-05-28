@@ -4,16 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Cats App</title>
   </head>
   <body>
-    <form class="form">
+    <div class="form">
       <h1>The cat app</h1>
       <div>
         <div class="form-catfacts">
           <h2>number of cats facts (50 maximum)</h2>
           <div>
-            <input id="factsNum" class="catnumInput" type="number" />
+            <input
+              id="factsNum"
+              placeholder="number of cat facts (max 50)"
+              class="catnumInput"
+              type="number"
+            />
             <button id="getFactsBtn" class="btnsubimt">Subimt</button>
           </div>
         </div>
@@ -21,13 +32,18 @@
         <div class="form-catpics">
           <h2>number of cats pics (50 maximum)</h2>
           <div>
-            <input id="picsNum" class="catnumInput" type="number" />
+            <input
+              id="picsNum"
+              placeholder="number of cat photos (max 50)"
+              class="catnumInput"
+              type="number"
+            />
             <button id="getpicsBtn" class="btnsubimt">Subimt</button>
           </div>
         </div>
       </div>
-    </form>
-    <div class="result"></div>
+    </div>
+    <div id="resultbox" class="result"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
