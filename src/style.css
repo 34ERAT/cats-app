@@ -14,3 +14,47 @@
 body {
   font-size: 62.5%;
 }
+
+.form {
+  background: var(--color-pink);
+  display: flex;
+  text-transform: capitalize;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3rem;
+}
+.form h1 {
+  font-size: 3rem;
+}
+.form > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+}
+.form-catfacts h2,
+.form-catpics h2 {
+  font-size: 1.2rem;
+}
+.form-catfacts div,
+.form-catpics div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.catnumInput {
+  font: inherit;
+  padding: 1rem 2rem;
+  width: 70%;
+  border-radius: 0.5rem;
+  border-color: transparent;
+  border: none;
+}
+.btnsubimt {
+  font: inherit;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
